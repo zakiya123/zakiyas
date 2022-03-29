@@ -1,19 +1,20 @@
 package myproject;
 
-public class Box {
+ class Box {
 			
 			double width;
 			double height;
 			double depth;
-			//Notice this constructor .it takes an object of type Box.
+			//Notice this constructor. it takes an object of type Box.
 			Box (Box ob){
 				//pass object to constructor
 			width=ob.width;
 			height=ob.height;
 			depth=ob.depth;
+			System.out.println("construcor 1 is called.....");
 			}
 			//constructor used when all demensions specified
-			Box(double w,double h,double d) {
+			Box(double w,double h,double d) {//constructor
 				width = w;
 				height = h;
 				depth = d;	
@@ -25,41 +26,36 @@ public class Box {
 				height=-1;
 				depth=-1;
 			}
-			double volume() {
-				return width*height*depth;
-			}
+			
 			//constructor used when cube is created
 			Box(double len){
 				width=height=depth=len;
 			}
-
-			
 			//compute and return volume
 			double volume() {
-			//return width*height*depth;
-				return volume();
+			return width*height*depth;		
 			}
 			}
-			class OverloadCons{
+			class OverloadCons {
 				public static void main(String[] args) {
 				//create boxex using the various constructors
-				Box mybox1 =new Box(10,20,15);
-				Box mybox2 =new Box();
-				Box mycube =new Box(7);
+					Box mybox1 =new Box(10,20,15);
+					Box mybox2 =new Box();
+					Box mycube =new Box(7);
+					Box myclone=new Box(mybox1);//create copy of mybox1
+				double vol;
 				//get volume of first box
-					double vol = mybox1.volume();
+				 vol = mybox1.volume();
 					System.out.println("Volume of mybox1 is"+vol);
 					//get volume of second box
-					Box mybox2;
-					vol=mybox2.volume();
-					System.out.println("Volume of mybox2 is"+vol);
+				vol= mybox2.volume();
+				System.out.println("Volume of mybox2 is"+vol);
 					//get volume of cube
-					Box mycube;
+					
 					vol=mycube.volume();
 					System.out.println("Volume of mycube is"+vol);
-				get volume of clone
-							vol=myclone.volume();
-					System.out.println("Volume of clone is"+vol);
+				//get volume of clone
+				vol=myclone.volume();
+				System.out.println("Volume of clone is"+vol);
 				}
 			}
-
