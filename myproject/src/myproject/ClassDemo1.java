@@ -15,12 +15,10 @@ public class ClassDemo1 {
 				}
 			}
 			void business() {
-				System.out.println(age+":"+name+":"+weight);
-				
-				
+				System.out.println(age+":"+name+":"+weight);	
 			}
 			public static void main(String[] args) {
 				ClassDemo1 obj=new ClassDemo1();
-				obj.business();}
+				obj.business();
+				}
 		}
-

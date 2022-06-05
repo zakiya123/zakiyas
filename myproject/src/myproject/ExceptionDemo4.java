@@ -1,6 +1,6 @@
 package myproject;
 
-public class ExceptionDemo4 {
+ public class ExceptionDemo4 {
 			public static void main(String[] args) {
 			Dog tiger=new Dog();
 			try {
@@ -11,8 +11,8 @@ public class ExceptionDemo4 {
 				System.out.println(dbee);
 			}
 			}	
-}
-class Dog{
+ }
+ class Dog{
 	public void play(String item)throws DogBiteException,DogBarkException{
 		if(item.equals("stick")) {
 			throw new DogBiteException("you beat i bite....");
@@ -33,8 +33,8 @@ class DogBiteException extends Exception{
 		
 		return "Exception is...:"+msg;
 	}
-}
-class DogBarkException extends Exception{
+ }
+ class DogBarkException extends Exception{
 	String msg;
 	public DogBarkException(String msg) {
 		this.msg=msg;
@@ -44,4 +44,4 @@ class DogBarkException extends Exception{
 		
 		return "Exception is.....:"+msg;
 	}
-}
+ }

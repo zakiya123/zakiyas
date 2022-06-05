@@ -1,14 +1,14 @@
 package myproject;
 
-public class AbstractDemo {
-			public static void main(String[] args) {
-				DominosPizza dominos= new IndianDominosPizza();
-				dominos.makePizza();
-				dominos.collectpayment();
-				dominos.deliverpizza();
+  public class AbstractDemo {
+     public static void main(String[] args) {
+		DominosPizza dominos= new IndianDominosPizza();
+		dominos.makePizza();
+		dominos.collectpayment();
+		dominos.deliverpizza();
 			}
        }
-abstract class DominosPizza{
+ abstract class DominosPizza{
 	
 	    final public void makePizza() {//template method
 			System.out.println("dominos pizza making started....");
@@ -28,18 +28,14 @@ abstract class DominosPizza{
 		}
 		public abstract void deliverpizza();
 		public abstract void collectpayment();	
-		
- }
+ }                                                       
 class IndianDominosPizza extends DominosPizza{
 	     @Override
 	      	public void collectpayment() {
 	      		System.out.println("collect payment as per indian standard....");
-	      		
 	      	} 
 	     @Override
 	    public void deliverpizza() {
 	   System.out.println("deliver pizza as per indian standard.....");
-	    
-	    }
- } 
-        
+	     }
+	    }     

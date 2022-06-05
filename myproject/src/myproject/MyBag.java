@@ -30,7 +30,7 @@ public class MyBag {
 		}
 		
 		Bag1 buyBag() {
-			purchase=false;
+			purchase=true;
 			spendMoney("a1");
 			
 			return new Bag1();

@@ -8,6 +8,7 @@ public class ForEach3 {
 				for(int j=0;j<5;j++)
 					nums[i][j]=(i+1)*(j+1);
 				for(int x[]:nums)
+					
 				{
 			for(int y:x) {
 				System.out.println("Value is:"+y);

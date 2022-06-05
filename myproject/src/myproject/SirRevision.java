@@ -27,8 +27,8 @@ public class SirRevision {
 			return money;
 		}
 		Bag buyBag() {
-			purchase=false;
-			spendMoney("a2");
+			purchase=true;
+			spendMoney("a1");
 			return new Bag();
 		}
 }

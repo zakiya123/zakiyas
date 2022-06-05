@@ -12,7 +12,7 @@ public class ExceptionDemo3 {
 			System.out.println("after exception....");
 			}
 }
-class LLRDriver{
+class LLRDriver {
 	public void drive(String road)throws Exception{
 	
 		if(road.equals("humpy")) {
